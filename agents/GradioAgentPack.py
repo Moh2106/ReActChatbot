@@ -97,7 +97,7 @@ class GradioReActAgentPack(BaseLlamaPack):
             with gr.Row():
                 chat_window = gr.Chatbot(
                     label="Message History",
-                    scale=8,
+                    scale=6,
                 )
                 console = gr.HTML(elem_id="box")
             with gr.Row():

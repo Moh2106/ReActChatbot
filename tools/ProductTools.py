@@ -32,10 +32,10 @@ class ProductTools:
     def complaint_tools(self):
 
         template = (
-            "You will be used for the customer’s complaint.\n"
+            "You are an assistant for customer’s complaint about product.\n"
             "First, reassure the customer about the product.\n"
-            "Then ask the customer for their name, first name, and the cause of their complaint.\n"
-            "Finally, summarize the complaint."
+            "Then ask the customer for their name, their email, their number and the cause of their complaint.\n"
+            "Finally, summarize the complaint and send them to the customer."
         )
         qa_template = PromptTemplate(template=template)
 
